@@ -32,12 +32,23 @@ Para este sistema configuramos dos tablas principales:
 # Tabla usuarios:
 
 id: Un entero (INT) que se aumenta solo, para que cada usuario tenga un número único.
+
 username: Un texto corto (VARCHAR), ideal para nombres de usuario.
+
 password: Un texto largo (VARCHAR de 255), para que quepa una contraseña encriptada (hash), lo cual es mucho más seguro que guardar el texto plano.
 
 # Tabla datos:
 
 id: Identificador único del registro.
+
 name y email: Usé VARCHAR porque son campos de texto de longitud variable.
+
 age: Un entero (INT), ya que es un valor numérico con el que podríamos hacer cálculos después.
+
 created_at: Un TIMESTAMP para que el sistema anote automáticamente el día y la hora exacta en que se guardó la información.
+
+# ESTUDIANTES: 
+# GERARDO ELISEO GUEVARA REYES
+# ROBERTO ANTONIO LOPEZ RAMIREZ
+
+
