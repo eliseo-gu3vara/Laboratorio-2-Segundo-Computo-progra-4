@@ -28,6 +28,20 @@ Son ideales para datos que solo importan mientras el usuario está navegando, co
 # Cookies:
 Las usamos para guardar pequeñas preferencias en el navegador del cliente (como un "recuérdame" o el idioma), que pueden durar incluso después de cerrar el navegador.
 
-# Describa brevemente sus tablas y los tipos de datos utilizados en cada campo;
+# 4- Describa brevemente sus tablas y los tipos de datos utilizados en cada campo;
 # justifique la elección del tipo de dato para cada uno.
 
+Para este sistema configuramos dos tablas principales:
+
+# Tabla usuarios:
+
+id: Un entero (INT) que se aumenta solo, para que cada usuario tenga un número único.
+username: Un texto corto (VARCHAR), ideal para nombres de usuario.
+password: Un texto largo (VARCHAR de 255), para que quepa una contraseña encriptada (hash), lo cual es mucho más seguro que guardar el texto plano.
+
+# Tabla datos:
+
+id: Identificador único del registro.
+name y email: Usé VARCHAR porque son campos de texto de longitud variable.
+age: Un entero (INT), ya que es un valor numérico con el que podríamos hacer cálculos después.
+created_at: Un TIMESTAMP para que el sistema anote automáticamente el día y la hora exacta en que se guardó la información.
